@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/footer.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+		<link rel='shortcut icon' type='images/favicon' href="images/favicon.ico" />
+		<title>TEDxEIS | Home</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			$(function() {
+				$('a[href*=#]').click(function() {
+					var target = $(this.hash);
+					$('html,body').animate({
+						scrollTop: target.offset().top
+					}, 1000);
+					return false;
+				});
+
+				var speakers = ['.first', '.second', '.third', '.fourth', '.fifth', '.sixth', '.seven'];
+				for(var i=0; i<=speakers.length; i++){
+					var num = 0+i;
+					var popup = '.pop-up-' + num;
+					$(popup).hide();
+				}
+				$('.brandon-dcruz').click(function(){
+			        $('.pop-up-1').show();
+			        $('.wrapper').css('opacity', '0.2');
+                    $('body').addClass('clicked');
+			    });
+				$(".pop-up-1 span").click(function() {
+				  $(".pop-up-1").hide();
+				  $('.wrapper').css('opacity', '1.0');
+                    $('body').removeClass('clicked');
+				});
+
+
+
+
+				$('.ly-marlow').click(function(){
+			        $('.pop-up-2').show();
+			        $('.wrapper').css('opacity', '0.2');
+                    $('body').addClass('clicked');
+			    });
+				$(".pop-up-2 span").click(function() {
+				  $(".pop-up-2").hide();
+				  $('.wrapper').css('opacity', '1.0');
+                    $('body').removeClass('clicked');
+				});
+
+
+
+
+				$('.michael-geffert').click(function(){
+			        $('.pop-up-3').show();
+			        $('.wrapper').css('opacity', '0.2');
+                    $('body').addClass('clicked');
+			    });
+				$(".pop-up-3 span").click(function() {
+				  $(".pop-up-3").hide();
+				  $('.wrapper').css('opacity', '1.0');
+                    $('body').removeClass('clicked');
+				});
+
+
+
+
+				$('.shima-ghaheri').click(function(){
+			        $('.pop-up-4').show();
+			        $('.wrapper').css('opacity', '0.2');
+                    $('body').addClass('clicked');
+			    });
+				$(".pop-up-4 span").click(function() {
+				  $(".pop-up-4").hide();
+				  $('.wrapper').css('opacity', '1.0');
+                    $('body').removeClass('clicked');
+				});
+
+
+
+				$('.skip-flanagan').click(function(){
+			        $('.pop-up-5').show();
+			        $('.wrapper').css('opacity', '0.2');
+                    $('body').addClass('clicked');
+			    });
+                $(".pop-up-5 span").click(function() {
+				  $(".pop-up-5").hide();
+				  $('.wrapper').css('opacity', '1.0');
+                    $('body').removeClass('clicked');
+				});
+
+
+
+				  $('.suhail-prasathong').click(function(){
+					$('.pop-up-6').show();
+					$('.wrapper').css('opacity', '0.2');
+					$('body').addClass('clicked');
+				  });
+				  $(".pop-up-6 span").click(function() {
+					$(".pop-up-6").hide();
+					$('.wrapper').css('opacity', '1.0');
+					$('body').removeClass('clicked');
+				  });
+
+              $('.gary-stine').click(function(){
+                $('.pop-up-7').show();
+                $('.wrapper').css('opacity', '0.2');
+                $('body').addClass('clicked');
+              });
+              $(".pop-up-7 span").click(function() {
+                $(".pop-up-7").hide();
+                $('.wrapper').css('opacity', '1.0');
+                $('body').removeClass('clicked');
+              });
+
+			});
+		</script>
+
+		<!--
+		<script>
+			var eventDate = new Date(2017, 1, 4, 12, 0, 0, 0).getTime();
+
+			setInterval(function() {
+				var curTime = new Date().getTime();
+				var timeLeft = eventDate - curTime;
+
+				var dCon = 1000*60*60*24;
+				var hCon = 1000*60*60;
+				var mCon = 1000*60;
+				var sCon = 1000;
+
+				var days = Math.floor(timeLeft/dCon);
+				var hours = Math.floor((timeLeft % dCon) / hCon);
+				var minutes = Math.floor((timeLeft % hCon) / mCon);
+				var seconds = Math.floor((timeLeft % mCon) / sCon);
+
+				document.getElementById("countdown").innerHTML = days + " days "
+				+ hours + " hours " + minutes + " minutes " + seconds + " seconds";
+			}, 1000);
+		</script>
+	-->
+	</head>
+
+	<body>
+		<!--Pop Up Details # 1-->
+		<div class="pop-up-1">
+			<span>x</span>
+			<div class="pop-up-text">
+				<div class="flex-container">
+					<h1>Brandon Dcruz</h1>
+					<img class="img-1" src="images/speakers/BrandonDcruz.jpg" alt="image one" />
+                	<h1>Cocaine Train Tracks: A Kid, Music, and Antidepressants</h1>
+					<h2>A personal story about depression, creativity, identity, and growing up.</h2>
+				</div>
+			</div>
+		</div>
+
+		<!--Pop Up Details # 2-->
+		<div class="pop-up-2">
+			<span>x</span>
+			<div class="pop-up-text">
+				<div class="flex-container">
+					<h1>LY Marlow</h1>
+					<img class="img-2" src="images/speakers/LYMarlow.jpg" alt="image two" />
+                    <h1>Why You Should Have the Courage to Embrace Your Passion</h1>
+					<h2>If given an opportunity to live with passion and purpose, despite your fears and risks, will YOU do it?</h2>
+				</div>
+			</div>
+		</div>
+
+		<!--Pop Up Details # 3-->
+		<div class="pop-up-3">
+			<span>x</span>
+			<div class="pop-up-text">
+				<div class="flex-container">
+					<h1>Michael Geffert</h1>
+                    <img class="img-3" src="images/speakers/MichaelGeffert.jpg" alt="image three" />
+                    <h1>How Do Magicians Fool Us?</h1>
+					<h2>The simple secrets and methods magicians use to trick us into believing what seems to be impossible.</h2>
+				</div>
+			</div>
+		</div>
+
+		<!--Pop Up Details # 4-->
+		<div class="pop-up-4">
+			<span>x</span>
+			<div class="pop-up-text">
+				<div class="flex-container">
+					<h1>Shima Ghaheri</h1>
+					<img src="images/speakers/ShimaGhaheri.JPG" alt="image four" />
+					<h1>Design Vs. War</h1>
+					<h2>Protecting war-traumatized children by designing modular system of games and toys</h2>
+				</div>
+			</div>
+		</div>
+
+		<!--Pop Up Details # 5-->
+        <div class="pop-up-5">
+			<span>x</span>
+			<div class="pop-up-text">
+				<div class="flex-container">
+					<h1>Skip Flanagan</h1>
+					<img src="images/speakers/SkipFlanagan.jpg" alt="image five" />
+					<h1>Go Deaf: Turning A Deaf Ear to the Naysayers</h1>
+					<h2>A deeper look into the phrase 'going deaf', and how it is applicable to all aspects of life...and how to apply it to yourself​.</h2>
+				</div>
+			</div>
+		</div>
+
+		<!--Pop Up Details # 6-->
+		<div class="pop-up-6">
+			<span>x</span>
+			<div class="pop-up-text">
+				<div class="flex-container">
+					<h1>Suhail Prasathong</h1>
+					<img src="images/speakers/SuhailPrasathong.png" alt="image five" />
+					<h1> The Privileged Immigrant</h1>
+					<h2>How a heartbreaking story about immigration unearthed the concept of a privileged immigrant.</h2>
+				</div>
+			</div>
+		</div>
+
+		<!--Pop Up Details # 7-->
+		<div class="pop-up-7">
+			<span>x</span>
+			<div class="pop-up-text">
+				<div class="flex-container">
+					<h1>Gary Stine</h1>
+					<img src="images/speakers/garystine.png" alt="image seven" />
+					<h1>Welcome to We</h1>
+					<h2>Why we hide in plain site when we speak in public, and how we can move beyond hiding toward a more useful model.</h2>
+				</div>
+			</div>
+		</div>
+
+		<!--The first section of the Home page. Houses the main site navigation.-->
+		<div class="wrapper">
+			<div class="hero">
+				<div class="overlay"></div>
+				<div class="hero-content">
+					<div class="nav">
+						<a href="index.html" class="logo"></a>
+						<div class="links">
+							<a href="about.html" class="link">ABOUT</a>
+							<a href="speakers.html" class="link">SPEAKERS</a>
+							<a href="sponsor.html" class="link">SPONSORS</a>
+							<a href="team.html" class="link">TEDxEkamaiIntlSchool 2016</a>
+							<a href="#sectionCont" class="link">CONTACT</a>
+						</div>
+					</div>
+					<div class="hero-center">
+						<div class="hero-title">Diverse Minds</div>
+	                    <!--<div class="countdown-title" id="countdown"></div>-->
+						<a href="#sectionDown" class="button">LEARN MORE</a>
+					</div>
+				</div>
+			</div>
+
+			<!--The second section of the Home page. Houses information for the event and a link to the About page.-->
+			<div class="page-wrapper" id="sectionDown">
+				<div class="about-container">
+					<div class="about-left">
+						<div class="date">25.3.19</div>
+						<div class="title right-align">Milne Auditorium</div>
+					</div>
+					<div class="about-right">
+						<div class="text">Diversity of thoughts breeds great thinkers. <br /><br />With the hope that our audience comes to TEDxEkamaiIntlSchool 2018 with an open mind, our goal is to challenge the preconceived notions some may carry with them and inspire them to greater heights.</div>
+						<a href="about.html" class="button main">FULL STORY</a>
+					</div>
+				</div>
+			</div>
+
+			<!--The third section of the Home page. Houses the information and links to apply for a Speaker or Attendee role.-->
+			<div class="gray" id="sectionApp">
+				<div class="page-wrapper">
+	                <div class="title space">Speakers</div>
+					<div class="speaker-grid">
+	                    <div class="speaker brandon-dcruz"></div>
+	                    <div class="speaker ly-marlow"></div>
+	                    <div class="speaker michael-geffert"></div>
+	                    <div class="speaker shima-ghaheri"></div>
+	                    <div class="speaker skip-flanagan"></div>
+                        <div class="speaker suhail-prasathong"></div>
+						<div class="speaker gary-stine"></div>
+	                </div>
+				</div>
+			</div>
+
+			<!--The fourth section of the Home page. Houses images and links to each of the sub-committees of TEDxRIT-->
+			<div class="page-wrapper">
+				<div class="title space">TEDxEkamaiIntlSchool 2016</div>
+				<div class="grid">
+					<div class="row">
+						<div class="left">
+							<div class="img one"></div>
+						</div>
+						<div class="right">
+							<div class="img two"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="left">
+							<div class="img three"></div>
+						</div>
+						<div class="right">
+							<div class="img four"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="left">
+							<div class="img five"></div>
+						</div>
+						<div class="right">
+							<div class="img six"></div>
+						</div>
+					</div>
+	                <div class="row">
+						<div class="left">
+							<div class="img seven"></div>
+	                    </div>
+						<div class="right">
+							<div class="img eight"></div>
+	                    </div>
+					</div>
+				</div>
+			</div>
+
+			<!--The fifth and final section of the Home page. Houses links to email the club as well as links to social media accounts.-->
+			<div class="footer" id="sectionCont">
+				<div class="top">
+					<div class="footer-title">Questions? Contact Us</div>
+					<a href="mailto:tedxeis1@gmail.com" class="footer-button">EMAIL</a>
+				</div>
+
+				<div class="bottom">
+					<div class="container">
+						<div class="footer-left">This independent TEDx event is operated under license from TED.</div>
+						<div class="footer-right">
+							<a href="https://www.facebook.com/TEDxRIT/?hc_ref=SEARCH&fref=nf" target="_blank" class="social fb"></a>
+							<a href="https://www.instagram.com/tedxrit/" target="_blank" class="social insta"></a>
+							<a href="https://twitter.com/TEDXRIT" target="_blank" class="social twitter"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
