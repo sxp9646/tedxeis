@@ -1,0 +1,257 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.clicked {
+    overflow: hidden;
+}
+
+.hero {
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    width: 100%;
+    height: 500px;
+    background-color: #181818;
+    opacity: .25;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hero-content {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.nav {
+    max-width: 1000px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+.logo {
+    background-image: url(../images/ted-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 50px;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    border-bottom: 1px rgba(255,255,255,0) solid;
+    transition: all .2s;
+    padding-bottom: 5px;
+    margin: 0px 15px;
+}
+
+.link:hover {
+    border-bottom: 1px rgba(255,255,255,1) solid;
+}
+
+.hero-title {
+    padding-top: 150px;
+    color: #fff;
+    font-size: 72px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight:  700;
+}
+
+.page-wrapper {
+    max-width: 1000px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.grid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 100px 0;
+}
+
+.row {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.left,
+.right {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 100%;
+}
+
+.eboard {
+    background-image: url(../images/eboard.png);
+}
+
+.one {
+    background-image: url(../images/speakers/BrandonDcruz.jpg);
+}
+
+.two {
+    background-image: url(../images/speakers/LYMarlow.jpg);
+}
+
+.three {
+    background-image: url(../images/speakers/MichaelGeffert.jpg);
+}
+
+.four {
+    background-image: url(../images/speakers/ShimaGhaheri.JPG);
+}
+
+.five {
+    background-image: url(../images/speakers/SkipFlanagan.jpg);
+}
+
+.six {
+    background-image: url(../images/speakers/SuhailPrasathong.png);
+}
+
+.seven {
+    background-image: url(../images/speakers/garystine.png);
+    background-position: center center;
+}
+
+.content-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+.title {
+    font-size: 36px;
+    color: #2e2e2e;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+
+.text {
+    width: 560px;
+    font-size: 14px;
+    font-family: 'helvetica';
+    color: #2e2e2e;
+    opacity: .75;
+    line-height: 26px;
+    padding-bottom: 25px;
+}
+
+.button {
+    width: 160px;
+    height: 45px;
+    background-color: #e52605;
+    color: rgba(255,255,255,.8);
+    text-decoration: none;
+    display: block;
+    font-family: 'helvetica';
+    font-size: 14px;
+    text-align: center;
+    line-height: 45px;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ff2b06;
+}
+
+/* CSS for Pop-up function in speaker page */
+.pop-up-1, .pop-up-2, .pop-up-3, .pop-up-4, .pop-up-5, .pop-up-6, .pop-up-7 {
+  height:auto;
+  width:80%;
+  left: 10%;
+  top: 3%;
+  background:#fff;
+  position:fixed;
+  z-index:6;
+  border-radius:5px;
+  box-shadow:0 0 20px #000;
+    overflow: scroll;
+    height: 700px;
+}
+
+
+
+span {
+  border-radius:0 0 30px 30px;
+  margin-left:90%;
+  background:#000;
+  color:#fff;
+  font-size:20px;
+  height:10px;
+  padding:0 5px;
+  cursor:pointer;
+}
+.pop-up-text {
+  box-sizing:border-box;
+  padding:20px;
+}
+.pop-up-text h1{
+  font-size:2em;
+  margin-bottom:20px;
+  width: 100%;
+    text-align: center;
+}
+.pop-up-text p{
+  font-size:1em;
+  margin-bottom:10px;
+  width: 70%;
+  opacity: .75;
+}
+.pop-up-text a {
+  color:#FF3D3D;
+  margin-bottom:10px;
+}
+.pop-up-text img {
+  max-height:400px;
+  text-align:center;
+  margin-bottom:10px;
+}
+
+.pop-up-text .flex-container {
+    display: flex;
+    width: 100%;
+    height: 90%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-2, .img-6, .img-7 {
+    padding: 0 100px;
+}

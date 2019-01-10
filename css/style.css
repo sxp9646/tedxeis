@@ -1,0 +1,448 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.clicked {
+    overflow: hidden !important;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.speakerApp {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: center
+}
+
+.speakerApp-center {
+    position: absolute;
+    bottom: 23%;
+    left: 37%;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: #181818;
+    opacity: .25;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hero-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.hero-center {
+    padding-top: calc(50vh - 180px);
+    /*left: calc(50% - 330px);*/
+    margin: 0 auto;
+}
+
+.nav {
+    max-width: 1000px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+.logo {
+    background-image: url(../images/tedxlogos/TEDxEkamaiIntlSchool5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top:30px;
+    width: 360px;
+    height: 75px;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    border-bottom: 1px rgba(255,255,255,0) solid;
+    transition: all .2s;
+    padding-bottom: 5px;
+    margin: 0px 15px;
+}
+
+.link:hover {
+    border-bottom: 1px rgba(255,255,255,1) solid;
+}
+
+.hero-title {
+    color: #fff;
+    font-size: 72px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight:  700;
+}
+
+.countdown-title {
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight:  700;
+    padding: 15px 0;
+}
+
+.subtitle {
+    padding: 15px 0 25px 0;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+.button {
+    width: 160px;
+    height: 45px;
+    margin: 0 auto;
+    background-color: #e52605;
+    color: rgba(255,255,255,.8);
+    text-decoration: none;
+    display: block;
+    font-family: 'helvetica';
+    font-size: 14px;
+    text-align: center;
+    line-height: 45px;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ff2b06;
+}
+
+
+.page-wrapper {
+    max-width: 1000px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.date {
+    font-size: 72px;
+    color: #ff2b06;
+    text-align: right;
+    font-weight: 700;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.about-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 75px 0;
+}
+
+.about-right {
+    width: 420px;
+}
+
+.about-left {
+    margin-right: 75px;
+}
+
+.main {
+    background-color: rgba(255,255,255,0);
+    border: 2px #ff2b06 solid;
+    color: #ff2b06;
+    margin: 0;
+    height: 40px;
+    width: 160px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-top: 35px;
+}
+
+.main:hover {
+    color: #fff;
+}
+
+.app-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 75px 0;
+}
+
+.gray {
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+.app-left,
+.app-right {
+    width: 420px;
+}
+
+.divider {
+    width: 1px;
+    height: 300px;
+    background-color: #cecece;
+}
+
+.space {
+    padding-top: 75px;
+}
+
+.grid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.row {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.left,
+.right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.img {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.content-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 36px;
+    color: #2e2e2e;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+
+.text {
+    font-size: 14px;
+    font-family: 'helvetica';
+    color: #2e2e2e;
+    opacity: .75;
+    line-height: 26px;
+}
+
+.hoverstate {
+    width: 100%;
+    height: 100%;
+    line-height: 350px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    opacity: 0;
+    background-color: #2e2e2e;
+    transition: all .2s;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.speaker-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    padding-bottom: 100px;
+}
+
+.speaker-grid:after {
+    content: "";
+    flex: auto;
+}
+
+.speaker {
+    display: flex;
+    flex-basis: 25%;
+    width: 20%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.speaker:hover {
+
+}
+
+.img:hover .hoverstate {
+    opacity: .9;
+}
+
+.one {
+    background-image: url(../images/gallery/tedxeis1.jpg);
+}
+
+.two {
+    background-image: url(../images/gallery/tedxeis2.jpg);
+}
+
+.three {
+    background-image: url(../images/gallery/tedxeis3.jpg);
+}
+
+.four {
+    background-image: url(../images/gallery/tedxeis4.jpg);
+}
+
+.five {
+    background-image: url(../images/gallery/tedxeis5.jpg);
+}
+
+.six {
+    background-image: url(../images/gallery/tedxeis6.jpg);
+}
+
+.seven {
+    background-image: url(../images/gallery/tedxeis7.jpg);
+}
+
+.eight {
+    background-image: url(../images/gallery/tedxeis8.jpg);
+}
+
+.nine {
+    background-image: url(../images/gallery/tedxeis9.jpg);
+}
+
+.ten {
+    background-image: url(../images/gallery/tedxeis10.jpg);
+}
+
+/* CSS for Pop-up function in speaker page */
+.pop-up-1, .pop-up-2, .pop-up-3, .pop-up-4, .pop-up-5, .pop-up-6, .pop-up-7 {
+  height:auto;
+  width:80%;
+  left: 10%;
+  top: 3%;
+  background:#fff;
+  position:fixed;
+  z-index:6;
+  border-radius:5px;
+  box-shadow:0 0 20px #000;
+    overflow: scroll;
+    height: 700px;
+}
+
+
+
+span {
+  border-radius:0 0 30px 30px;
+  margin-left:90%;
+  background:#000;
+  color:#fff;
+  font-size:20px;
+  height:10px;
+  padding:0 5px;
+  cursor:pointer;
+}
+.pop-up-text {
+  box-sizing:border-box;
+  padding:20px;
+}
+.pop-up-text h1{
+  font-size:2em;
+  margin-bottom:20px;
+  width: 100%;
+    text-align: center;
+}
+.pop-up-text p{
+  font-size:1em;
+  margin-bottom:10px;
+  width: 70%;
+  opacity: .75;
+}
+.pop-up-text a {
+  color:#FF3D3D;
+  margin-bottom:10px;
+}
+.pop-up-text img {
+  max-height:400px;
+  text-align:center;
+  margin-bottom:10px;
+}
+
+.pop-up-text .flex-container {
+    display: flex;
+    width: 100%;
+    height: 90%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* End of CSS for pop up */
+
+.brandon-dcruz {
+    background-image: url(../images/speakers/BrandonDcruz.jpg);
+}
+
+.ly-marlow {
+    background-image: url(../images/speakers/LYMarlow.jpg);
+}
+
+.michael-geffert {
+    background-image: url(../images/speakers/MichaelGeffert.jpg);
+}
+
+.shima-ghaheri {
+    background-image: url(../images/speakers/ShimaGhaheri.JPG);
+}
+
+.skip-flanagan {
+    background-image: url(../images/speakers/SkipFlanagan.jpg);
+}
+
+.suhail-prasathong {
+    background-image: url(../images/speakers/SuhailPrasathong.png);
+}
+
+.gary-stine {
+    background-image: url(../images/speakers/garystine.png);
+}
+
+.flex-container h2 {
+    text-align: center;
+}
